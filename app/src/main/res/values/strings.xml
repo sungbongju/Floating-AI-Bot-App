@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Simple Codespaces App</string>
+    <string name="welcome_message">GitHub Codespaces 안드로이드 앱</string>
+    <string name="click_count">클릭 횟수: %d</string>
+    <string name="current_time">현재 시간: %s</string>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- 헤더 -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚀 Codespaces 안드로이드 앱"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:textAlignment="center"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 카운터 섹션 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📊 클릭 카운터"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/counterText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="클릭 횟수: 0"
+                android:textSize="16sp"
+                android:textColor="#7F8C8D"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/clickButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="👆 클릭하세요!"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#3498DB"
+                android:textColor="#FFFFFF"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <!-- 시간 섹션 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⏰ 시간 확인"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/timeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🕐 현재 시간 보기"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#2ECC71"
+                android:textColor="#FFFFFF"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <!-- 색깔 변경 섹션 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎨 색깔 변경"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/colorButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌈 색깔 바꾸기"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#E74C3C"
+                android:textColor="#FFFFFF"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <!-- 푸터 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✨ GitHub Codespaces로 만든 첫 번째 안드로이드 앱"
+            android:textSize="14sp"
+            android:textColor="#95A5A6"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>
