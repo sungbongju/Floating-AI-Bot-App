@@ -37,7 +37,19 @@ print_error() {
 print_step "1" "환경 확인 중..."
 echo "현재 디렉토리: $(pwd)"
 echo "사용자: $(whoami)"
-echo "Java 버전: $(java -version 2>&1 | head -1)"
+echo "기본 Java 버전: $(java -version 2>&1 | head -1)"
+echo ""
+
+# ==========================================================
+# ☕ 1.5단계: Java 버전을 17로 설정 (추가된 부분)
+# ==========================================================
+print_step "1.5" "Java 버전을 17로 설정합니다..."
+sudo update-alternatives --set java /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+echo "변경된 Java 버전:"
+java -version
+echo "JAVA_HOME 설정: $JAVA_HOME"
+print_success "Java 버전이 17로 성공적으로 변경되었습니다."
 echo ""
 
 # 2. 기존 Android SDK 확인
