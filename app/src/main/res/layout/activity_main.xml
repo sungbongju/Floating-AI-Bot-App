@@ -131,6 +131,50 @@
 
         </LinearLayout>
 
+        <!-- PIP & Floating Widget 섹션 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📱 고급 기능"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/pipButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📺 PIP 모드"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#9B59B6"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/floatingButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎈 플로팅 위젯"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#F39C12"
+                android:textColor="#FFFFFF"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
         <!-- 푸터 -->
         <TextView
             android:layout_width="match_parent"
