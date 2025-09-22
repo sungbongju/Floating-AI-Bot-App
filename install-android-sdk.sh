@@ -41,15 +41,22 @@ echo "기본 Java 버전: $(java -version 2>&1 | head -1)"
 echo ""
 
 # ==========================================================
-# ☕ 1.5단계: Java 버전을 17로 설정 (추가된 부분)
+# ☕ 1.5단계: Java 17 설치 및 설정 (수정된 부분)
 # ==========================================================
-print_step "1.5" "Java 버전을 17로 설정합니다..."
+print_step "1.5" "Java 17을 설치하고 기본 버전으로 설정합니다..."
+# apt 패키지 리스트 업데이트
+sudo apt-get update -y
+# openjdk-17-jdk 설치
+sudo apt-get install -y openjdk-17-jdk
+# update-alternatives를 사용하여 시스템의 기본 Java 버전을 17로 변경
 sudo update-alternatives --set java /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# Gradle이 참조하는 JAVA_HOME 환경 변수를 17 버전으로 명시적으로 설정
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+# 변경된 버전 확인
 echo "변경된 Java 버전:"
 java -version
 echo "JAVA_HOME 설정: $JAVA_HOME"
-print_success "Java 버전이 17로 성공적으로 변경되었습니다."
+print_success "Java 17 설치 및 설정이 완료되었습니다."
 echo ""
 
 # 2. 기존 Android SDK 확인
@@ -223,3 +230,4 @@ echo "  ./gradlew assembleDebug"
 echo ""
 echo "📱 APK 파일 위치:"
 echo "  app/build/outputs/apk/debug/app-debug.apk"
+
