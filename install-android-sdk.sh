@@ -131,7 +131,7 @@ echo ""
 
 # 8. local.properties 파일 생성
 print_step "8" "local.properties 파일 생성 중..."
-cd /workspaces/simple-android-app
+cd /workspaces/Floating-AI-Bot-App
 echo "sdk.dir=$ANDROID_SDK_PATH" > local.properties
 echo "local.properties 내용:"
 cat local.properties
@@ -194,7 +194,7 @@ echo ""
 
 # 13. 임시 파일 정리
 print_step "13" "임시 파일 정리 중..."
-cd /workspaces/simple-android-app
+cd /workspaces/Floating-AI-Bot-App
 rm -rf "$TEMP_DIR"
 print_success "임시 파일 정리 완료"
 echo ""
